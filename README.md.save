@@ -1,0 +1,16 @@
+# Machine Learning-Driven Framework for Energy-Aware and Predictive Cloud Resource Management
+
+A machine learning–driven framework for predictive and energy-aware
+cloud resource management, focusing on workload forecasting,
+energy efficiency, and cloud optimization.
+
+## Modules
+- Predictive workload modeling
+- Energy-aware resource allocation
+- Cloud simulation & evaluation
+- Reproducible experiment pipelines
+
+## Status
+🚧 Under active development
+
+
