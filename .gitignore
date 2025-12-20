@@ -1,0 +1,9 @@
+
+# Data (do not commit)
+data/
+*.csv
+*.parquet
+*.zip
+*.7z
+*.tar
+*.gz
