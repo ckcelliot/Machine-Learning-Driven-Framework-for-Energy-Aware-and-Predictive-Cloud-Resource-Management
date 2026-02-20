@@ -129,40 +129,40 @@ These files record time-step-level information such as simulation time, slot ind
 The project is organized into Java simulation code, machine learning notebooks, input data, and exported results.
 .
 ├── data/
-│   ├── fastStorage/2013-8/              # Raw Bitbrains workload traces
-│   ├── bitbrains_clean_all.csv          # Cleaned dataset
-│   ├── bitbrains_ml_windows.csv         # Feature-engineered windows
-│   ├── bitbrains_regression.csv         # Regression dataset
-│   ├── bitbrains_classification.csv     # Classification dataset
-│   └── bitbrains_predictions_for_cloudsim.csv  # ML predictions used by simulation
+│ ├── fastStorage/2013-8/ # Raw Bitbrains workload traces
+│ ├── bitbrains_clean_all.csv # Cleaned dataset
+│ ├── bitbrains_ml_windows.csv # Feature-engineered windows
+│ ├── bitbrains_regression.csv # Regression dataset
+│ ├── bitbrains_classification.csv # Classification dataset
+│ └── bitbrains_predictions_for_cloudsim.csv # ML predictions used by simulation
 │
 ├── java/
-│   ├── autoscaling/
-│   │   ├── AutoScalerPolicy.java
-│   │   ├── PredictionLoader.java
-│   │   ├── PredictionRecord.java
-│   │   └── TestLoader.java
-│   │
-│   └── cloudsim/
-│       ├── MainSimulation.java          # Predictive policy
-│       ├── ReactiveSimulation.java      # Reactive policy
-│       └── StaticSimulation.java        # Static policy
+│ ├── autoscaling/
+│ │ ├── AutoScalerPolicy.java
+│ │ ├── PredictionLoader.java
+│ │ ├── PredictionRecord.java
+│ │ └── TestLoader.java
+│ │
+│ └── cloudsim/
+│ ├── MainSimulation.java # Predictive policy
+│ ├── ReactiveSimulation.java # Reactive policy
+│ └── StaticSimulation.java # Static policy
 │
-├── lib/                                 # CloudSim Plus and dependency JARs
+├── lib/ # CloudSim Plus and dependency JARs
 │
 ├── exports/
-│   ├── results_predictive.csv
-│   ├── results_reactive.csv
-│   └── results_static.csv
+│ ├── results_predictive.csv
+│ ├── results_reactive.csv
+│ └── results_static.csv
 │
 ├── notebooks/
-│   ├── 1_data_preprocessing.ipynb
-│   ├── 2_feature_engineering.ipynb
-│   ├── 03_ml_training.ipynb
-│   ├── 03_cloudsim_analysis.ipynb
-│   └── 04_metrics_and_plots.ipynb
+│ ├── 1_data_preprocessing.ipynb
+│ ├── 2_feature_engineering.ipynb
+│ ├── 03_ml_training.ipynb
+│ ├── 03_cloudsim_analysis.ipynb
+│ └── 04_metrics_and_plots.ipynb
 │
-└── out/                                 # Compiled Java output
+└── out/ # Compiled Java output
 
 Folder Overview
 
@@ -301,4 +301,5 @@ Use these notebooks to:
 4. ## Notes
 
 This project was developed for academic research and experimental evaluation of predictive autoscaling strategies in simulated cloud environments using CloudSim Plus.
+
 
