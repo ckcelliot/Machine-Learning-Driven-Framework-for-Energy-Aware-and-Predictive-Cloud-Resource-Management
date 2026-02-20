@@ -31,7 +31,10 @@ Each slot represents a discrete time step for which CPU usage predictions are av
 
 During simulation, the current simulation time is converted into a slot index:
 
+```
 int slot = (int) time;
+
+```
 
 This mapping ensures that, at every simulation step, the autoscaler retrieves the correct machine-learning prediction corresponding to that time slot.
 
@@ -39,7 +42,9 @@ This mapping ensures that, at every simulation step, the autoscaler retrieves th
 
 The predictive autoscaler relies on the following file generated during the ML phase:
 
+```
 data/bitbrains_predictions_for_cloudsim.csv
+```
 
 This CSV contains future CPU usage predictions aligned with simulation slots.
 
@@ -67,7 +72,10 @@ The file is loaded by the PredictionLoader class, which:
 
 Example usage inside the simulation:
 
-   PredictionRecord rec = loader.get(vmId, slot);
+  ``` 
+  PredictionRecord rec = loader.get(vmId, slot);
+
+  ```
 
 If no prediction exists for a given slot, the autoscaling policy keeps the current number of virtual machines unchanged.
 
@@ -87,6 +95,7 @@ Scaling decisions follow these rules:
 
 An example configuration used in the simulation:
 
+```
 AutoScalerPolicy policy = new AutoScalerPolicy(
     80.0,  // highThreshold (%)
     20.0,  // lowThreshold (%)
@@ -95,6 +104,8 @@ AutoScalerPolicy policy = new AutoScalerPolicy(
     1,     // scaleStepUp
     1      // scaleStepDown
 );
+
+```
 
 This policy ensures controlled scaling while preventing over-provisioning or under-provisioning beyond configured limits.
 
@@ -306,6 +317,7 @@ Use these notebooks to:
 4. ## Notes
 
 This project was developed for academic research and experimental evaluation of predictive autoscaling strategies in simulated cloud environments using CloudSim Plus.
+
 
 
 
