@@ -163,7 +163,6 @@ The project is organized into Java simulation code, machine learning notebooks, 
 │ └── 04_metrics_and_plots.ipynb
 │
 └── out/ # Compiled Java output
-
 Folder Overview
 
 1. data/ – Contains raw workload traces, processed datasets, and ML prediction files.
@@ -301,5 +300,6 @@ Use these notebooks to:
 4. ## Notes
 
 This project was developed for academic research and experimental evaluation of predictive autoscaling strategies in simulated cloud environments using CloudSim Plus.
+
 
 
