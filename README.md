@@ -127,7 +127,10 @@ These files record time-step-level information such as simulation time, slot ind
 ## Repository Structure
 
 The project is organized into Java simulation code, machine learning notebooks, input data, and exported results.
-'''.
+
+```
+
+.
 ├── data/
 │ ├── fastStorage/2013-8/ # Raw Bitbrains workload traces
 │ ├── bitbrains_clean_all.csv # Cleaned dataset
@@ -162,7 +165,10 @@ The project is organized into Java simulation code, machine learning notebooks, 
 │ ├── 03_cloudsim_analysis.ipynb
 │ └── 04_metrics_and_plots.ipynb
 │
-└── out/ # Compiled Java output'''
+└── out/ # Compiled Java output
+
+```
+
 Folder Overview
 
 1. data/ – Contains raw workload traces, processed datasets, and ML prediction files.
@@ -300,6 +306,7 @@ Use these notebooks to:
 4. ## Notes
 
 This project was developed for academic research and experimental evaluation of predictive autoscaling strategies in simulated cloud environments using CloudSim Plus.
+
 
 
 
